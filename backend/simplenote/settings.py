@@ -39,6 +39,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'rest_framework',
     'notes',
+    'listings',
+    'realtors',
     'corsheaders'
 ]
 
@@ -80,8 +82,11 @@ WSGI_APPLICATION = 'simplenote.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'pythondevtodeploy',
+        'USER': 'postgres',
+        'PASSWORD': '090993',
+        'HOST': 'localhost'
     }
 }
 
