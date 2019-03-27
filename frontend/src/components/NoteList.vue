@@ -14,7 +14,7 @@ import { mapGetters } from 'vuex'
 export default {
   name: 'NoteList',
   computed: mapGetters(['notes']),
-  data() {
+  data () {
     return {
       title: '',
       body: '',
@@ -26,7 +26,7 @@ export default {
       this.$store.dispatch('deleteNote', note)
     }
   },
-  beforeMount() {
+  beforeMount () {
     this.$store.dispatch('getNotes')
   }
 }

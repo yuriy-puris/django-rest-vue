@@ -6,4 +6,4 @@ class NoteSerializer(serializers.ModelSerializer):
 
   class Meta:
     model = Note
-    fields = ('id', 'title', 'body', 'created_at')
+    fields = ('id', 'title', 'body', 'addition', 'created_at')

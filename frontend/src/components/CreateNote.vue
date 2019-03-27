@@ -19,7 +19,7 @@
 <script>
 export default {
   name: 'CreateNote',
-  data() {
+  data () {
     return {
       title: '',
       body: ''

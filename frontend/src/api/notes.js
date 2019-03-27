@@ -1,18 +1,17 @@
 import { HTTP } from './common'
 
 export const NOTES = {
-  create(config) {
+  create (config) {
     return HTTP.post('/notes/', config).then(response => {
       return response.data
     })
   },
-  read() {
+  read () {
     return HTTP.get('/notes/').then(response => {
       return response.data
     })
   },
-  delete(note) {
+  delete (note) {
     return HTTP.delete(`/notes/${note.id}/`)
   }
 }
-
